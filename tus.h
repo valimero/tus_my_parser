@@ -14,5 +14,7 @@ int tu_readchar();
 int tu_readtext();
 int tu_readint();
 int tu_readid();
+int tu_readfloat();
+
 
 #endif

@@ -9,6 +9,7 @@ int main()
     tu_readtext();
     tu_readint();
     tu_readid();
+    tu_readfloat();
 
 
 
