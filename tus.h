@@ -6,10 +6,6 @@
 
 #include "../my_parser.h"
 
-// TO Test
-void                    clean_captures(struct capture_list **c);
-
-
 // TUs
 int tu_clean_captures();
 int tu_readrange();
