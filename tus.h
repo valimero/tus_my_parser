@@ -13,6 +13,6 @@ int tu_readeof();
 int tu_readchar();
 int tu_readtext();
 int tu_readint();
-
+int tu_readid();
 
 #endif

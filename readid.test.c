@@ -36,13 +36,16 @@ int tu_readid()
     error += tu_readid_test("_asdasd8374_", 12, 1, "test1");
     
     // Test 2
-    error +=tu_readid_test("_*asdasd8374_", 1, 0, "test2");
+    error +=tu_readid_test("_*asdasd8374_", 1, 1, "test2");
     
     // Test 3
-    error +=tu_readid_test("\0\0", 0, 1, "test3");
+    error +=tu_readid_test("\0\0", 0, 0, "test3");
 
     // Test 4
-    error +=tu_readid_test("", 0, 1, "test4");
+    error +=tu_readid_test("", 0, 0, "test4");
+
+    // Test 5
+    error +=tu_readid_test("_______*", 7, 1, "test5");
     
 
     return error > 0 ? 1 : 0;

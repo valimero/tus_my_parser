@@ -42,6 +42,5 @@ int tu_readint()
     // Test 4
     error +=tu_readint_test("333e", 3, 1, "test4");
     
-
     return error > 0 ? 1 : 0;
 }
