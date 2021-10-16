@@ -35,7 +35,7 @@ int tu_readtext()
     error +=tu_readtext_test("123", "2", 0, "test2");
     
     // Test 3
-    error +=tu_readtext_test("0/0", "0/", 2, "test3");
+    error +=tu_readtext_test("texo", "text", 0, "test3");
 
     // Test 4
     error +=tu_readtext_test("poopasdasd", "poop", 4, "test4");
