@@ -3,16 +3,14 @@
 
 int main()
 {   
-    tu_readeof();
-    tu_readchar();
-    tu_readrange();
-    tu_readtext();
-    tu_readint();
-    tu_readid();
-    tu_readfloat();
+    int error = 0;
+    error += tu_readeof();
+    error += tu_readchar();
+    error += tu_readrange();
+    error += tu_readtext();
+    error += tu_readint();
+    error += tu_readid();
+    error += tu_readfloat();
 
-
-
-
-    return 0;
+    return error > 0 ? 0 : 1;
 }
